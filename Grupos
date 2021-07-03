@@ -1,5 +1,7 @@
 
 
+
+
 public class Grupos{
 int[] ArrayA = new int [10];
 int[] ArrayB = new int [10];
@@ -47,7 +49,15 @@ public void calcula (int a, int b){
     catch(ArithmeticException e)
         {System.out.print("Erro divisão resultado zero");  
         }
-    } 
+    }
+public int DivisaoDeArray(){
+    int i;
+    for(i = 0; i<9; i++){
+        calcula(ArrayA[i],ArrayB[i]);
+    }
+    return ArrayA[i]/ArrayB[i];
+    
+} 
 }
 
 
