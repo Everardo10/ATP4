@@ -1,0 +1,54 @@
+
+
+public class Grupos{
+int[] ArrayA = new int [10];
+int[] ArrayB = new int [10];
+public int setArrayA(int posicao, int valor){
+    return ArrayA[posicao]=valor;
+}
+public int setArrayB(int posicao, int valor){
+    return ArrayB[posicao]=valor;
+}
+public int getArrayA(int posicao){
+    return ArrayA[posicao];
+}
+public int getArrayB(int posicao){
+    return ArrayB[posicao];
+}
+public void setValorPosicaoArrayA(int posicao, int valor){
+    if(posicao < 0){
+        System.out.print("Posição inválida");
+        return;
+    }
+    else if(posicao>9){
+        System.out.print("Posição inválida");
+        return;
+    }
+    this.ArrayA[posicao]=valor;
+}
+public void setValorPosicaoArrayB(int posicao, int valor){
+    if(posicao < 0){
+        System.out.print("Posição inválida");
+        return;
+    }
+    else if(posicao>9){
+        System.out.print("Posição inválida");
+        return;
+    }
+    this.ArrayB[posicao]=valor;
+}
+public void calcula (int a, int b){
+    try{System.out.print(a + "/"+ b + "="+(a/b));}
+        catch(ArithmeticException e)
+        {System.out.print("Erro divisão por zero");  
+        }
+    if  (a == 0)
+    try{System.out.print(a + "/"+ b + "="+(a/b));}
+    catch(ArithmeticException e)
+        {System.out.print("Erro divisão resultado zero");  
+        }
+    } 
+}
+
+
+
